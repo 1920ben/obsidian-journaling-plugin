@@ -29,8 +29,8 @@ async function scanDirectories(
                 const fileNameWithoutExtA = a.name.replace(".md", "");
                 const fileNameWithoutExtB = b.name.replace(".md", "");
 
-                const dateA = moment.utc(fileNameWithoutExtA);
-                const dateB = moment.utc(fileNameWithoutExtB);
+                const dateA = moment.utc(fileNameWithoutExtA, dateFormat);
+                const dateB = moment.utc(fileNameWithoutExtB, dateFormat);
 
                 return filterValue === "new"
                     ? dateB.diff(dateA)
