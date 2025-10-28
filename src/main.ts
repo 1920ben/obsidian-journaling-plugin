@@ -119,3 +119,4 @@ class JournalingSettingTab extends PluginSettingTab {
 					await this.plugin.saveSettings();
 				}));
 	}
+}
